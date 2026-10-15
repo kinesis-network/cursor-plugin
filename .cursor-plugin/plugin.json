@@ -1,0 +1,13 @@
+{
+  "name": "kinesis-network",
+  "description": "Deploy apps and AI models, find out why they aren't running, manage dedicated GPU servers and track costs on Kinesis, from Cursor's agent.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kinesis Network"
+  },
+  "homepage": "https://docs.kinesis.network/mcp",
+  "repository": "https://github.com/kinesis-network/cursor-plugin",
+  "license": "MIT",
+  "keywords": ["deploy", "docker", "containers", "gpu", "ai-models", "cloud", "devops", "mcp"],
+  "logo": "assets/logo.svg"
+}

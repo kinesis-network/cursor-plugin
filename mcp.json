@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "kinesis": {
+      "url": "https://mcp.kinesis.network/mcp"
+    }
+  }
+}
