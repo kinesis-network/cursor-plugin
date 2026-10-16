@@ -1,7 +1,7 @@
 {
   "name": "kinesis-network",
   "description": "Deploy apps and AI models, find out why they aren't running, manage dedicated GPU servers and track costs on Kinesis, from Cursor's agent.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Kinesis Network"
   },

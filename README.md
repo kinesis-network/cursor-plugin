@@ -29,6 +29,10 @@ The agent can:
 
 You need a [Kinesis account](https://portal.kinesis.network/signup). Deploying apps and adding servers use your organization's Kinesis credits. To deploy from GitHub, connect your GitHub account to Kinesis first; the agent gives you the link when it's needed.
 
+## Skills
+
+- **deploy-to-kinesis**: deploys the repository you have open, or redeploys it. The agent checks what is pushed, the Dockerfile, the port and the environment variables, connects the app to your GitHub repository, follows the build and gives you the address.
+
 ## How it behaves
 
 - Every action runs with your own Kinesis role and permissions.
