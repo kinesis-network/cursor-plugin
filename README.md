@@ -1,25 +1,30 @@
 # Kinesis Network for Cursor
 
-Deploy an app, find out why it isn't running, and see what it costs, without leaving the editor.
+Run Docker images, GitHub repositories and AI models on Kinesis without leaving the editor: serverless, or on a Grid of your own servers.
 
-[Kinesis](https://kinesis.network) runs containerized apps and AI models on serverless CPU capacity, on your organization's own grids of dedicated servers (including GPUs), or on spot capacity from the Kinesis marketplace. This plugin connects Cursor's agent to the Kinesis MCP server, so the agent can do the work you would otherwise click through the dashboard for.
+[Kinesis](https://kinesis.network) runs containers on two kinds of capacity:
+
+- **Serverless**: Kinesis-managed CPU machines with nothing to set up, billed per millisecond of use.
+- **Grids**: pools of servers your organization owns, for GPUs and dedicated capacity. One Grid can mix dedicated GPU servers, AWS and Azure instances, machines of your own and spot machines from the Kinesis marketplace. Kinesis places your apps across them, and can hibernate a server when nothing runs on it and wake it when an app needs it.
+
+This plugin connects Cursor's agent to Kinesis, so it can ship what you build, set up the capacity it runs on and keep an eye on the bill.
 
 ## What you can ask
 
-- "Deploy this repository to Kinesis as `my-api`, serving HTTP on port 8080."
-- "Why isn't `api-prod` running? Check its status and logs."
-- "Roll `worker` back to its previous build."
+- "Deploy this repository to Kinesis."
+- "Run Qwen3 30B with vLLM on our GPU Grid."
+- "Order an H100 server for the `inference` Grid. Show me the cost first."
+- "Give me the command to add my own Linux server to our Grid."
+- "Roll `api` back to its previous build."
 - "What did our organization spend on Kinesis this month?"
-- "Estimate a dedicated server with the cheapest GPU and a 100 GB disk. Don't order it."
 
 The agent can:
 
-- Deploy from a container image (public or in a private registry), from a GitHub repository (Kinesis builds it with your Dockerfile), or from a template such as an Ollama chat or a vLLM server.
-- Troubleshoot: read an app's status, build output, container logs and server logs, and check whether any server can run it.
-- Start, stop and restart apps, change their settings and environment variables, rebuild from another branch or roll back, and connect a custom domain.
-- Add dedicated servers to a grid, with a cost estimate first, or attach a machine of your own.
-- Show your organization's costs, usage and invoices.
-- Manage members, roles and sharing, and read the audit log.
+- Deploy a Docker image (public or from a private registry), a GitHub repository (built from its Dockerfile and rebuilt on every push), or a ready-made template: Ollama and vLLM model servers, JupyterLab, n8n, Grafana and more.
+- Give apps GPUs, persistent volumes, environment variables and secrets, HTTPS and custom domains.
+- Build Grids: order dedicated servers with a cost estimate first, attach your own machines, and choose which servers apps prefer.
+- Run apps day to day: start, stop and scale them, roll back a build, and read their status and logs when something goes wrong.
+- Show your organization's costs, usage and invoices, and manage members, roles and sharing.
 
 ## Getting started
 
